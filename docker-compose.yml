@@ -1,0 +1,15 @@
+services:
+  chat_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    environment:
+      CHAT_PORT: 8888
+      MAX_USERS: 3
+  chat_redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
