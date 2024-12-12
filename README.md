@@ -7,6 +7,7 @@
 #### `docker compose up`
 
 ## CHANGER LE PORT D'ÉCOUTE:
-#### Pour changer le port d'écoute du serveur modifiez la variable CALC_PORT dans le fichier .env
+#### Pour changer le port d'écoute du serveur modifiez la variable CHAT_PORT dans docker-compose.yml
+#### Pour changer le nombre maximum d'users connecté modifiez la variable MAX_USERS dans docker-compose.yml
 
 voilà
